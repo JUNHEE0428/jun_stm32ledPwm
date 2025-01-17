@@ -11,9 +11,9 @@
 extern TIM_HandleTypeDef htim1;
 
 void setDuty(uint8_t duty1,uint8_t duty2,uint8_t duty3){
-	htim1.Instance->CCR1 = duty1*10;
-	htim1.Instance->CCR2 = duty2*10;
-	htim1.Instance->CCR3 = duty3*10;
+	htim1.Instance->CCR1 = duty1*100;
+	htim1.Instance->CCR2 = duty2*100;
+	htim1.Instance->CCR3 = duty3*100;
 }
 void app(){
 	// 타이머 장치 시작
